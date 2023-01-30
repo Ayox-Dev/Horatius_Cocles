@@ -101,7 +101,7 @@
                   </p>
 
                   <div class="d-flex justify-content-center justify-content-sm-start">
-                    <a href="" class="call_to-btn" href="#story" id="story-pages">
+                    <a href="#story" id="story-pages" class="call_to-btn ">
                       <span>
                         Voir plus
                       </span>
@@ -174,11 +174,13 @@
               Son Histoire
             </h2>
             <p>
-              Horatius Cocles est un personnage légendaire de la Rome antique, qui est connu pour avoir défendu seul le
-              pont Sublicius contre les Etrusques alors qu'ils envahissaient Rome. Il aurait coupé le pont pour empêcher
-              les envahisseurs de pénétrer dans Rome, et aurait combattu seul contre eux, permettant ainsi à ses
-              camarades de se retirer en toute sécurité. Il aurait finalement été vaincu mais aurait réussi à sauver
-              Rome de la destruction.
+              Horatius Cocles est un personnage légendaire de la Rome antique, qui est connu pour avoir défendu avec
+              seulement 2 hommes le
+              pont Sublicius contre les Etrusques alors qu'ils voulaient envahir Rome. Il aurait retenu ses ennemis le
+              pont pour empêcher
+              les envahisseurs de pénétrer dans Rome, permettant ainsi à ses camarades de se retirer en toute sécurité.
+              Il a finalement
+              sauté dans le Tibre en réussissant à sauver Rome de la destruction.
             </p>
             <!-- <div class="d-flex justify-content-center justify-content-sm-start">
                 <a href="" class="sub_call_to-btn ">
@@ -205,58 +207,60 @@
   <section class="image_section layout_padding" id="image">
     <div class="container">
       <h2 class="text-uppercase">Image</h2>
-      <button id="btn1" class="button_image">Identification</button>
+      <button id="btn4" class="button_image">Observation</button>
+      <button id="btn5" class="button_image">Composition</button>
+      <button id="btn1" class="button_image">Tensions & Nœuds</button>
       <button id="btn2" class="button_image">Les plans</button>
       <button id="btn3" class="button_image">Lumière</button>
-      <button id="btn4" class="button_image">Observation</button>
       <p></p>
       <p id="img-h3">
       </p>
       <div id="img-infos" class="img-infos">
-        <p>1A : Courone de laurier, nuage clairs</p>
-        <p>1B : Noeud central du tableau, où la majeur partie des actions à lieu</p>
-        <p>1C : Personnage laissant couler de l'eau -> captivé par le spectacle</p>
-        <p>2A : Anges apportant la victoire à Horatius</p>
-        <p>2B : Pont, élément principal</p>
-        <p>2C : Regard -> Horatius, attire et guide le regard</p>
-        <p>3A : Montre Rome derrière lui</p>
-        <p>3B : Romains qui travaillent, ressent la tension</p>
-        <p>3C : /</p>
       </div>
       <div id="img-tab" class="img-tab">
-        <img src="./images/1280px-Le_Brun,_Charles_-_Horatius_Cocles_defending_the_Bridge_-_Google_Art_Project.jpg"
-          class="img-tab">
+      </div>
+      <div class="img-tab-tinfo">
+        <p>
+        <p>* Charles Le Brun, Horatius Cocles défendant le pont Sublicius, vers 1642, mouvement baroque français, huile sur toile, 1,219 x 1,718 m, Dulwich Picture Gallery, Londres.</p>
       </div>
       <script type="text/javascript">
         const btn1 = document.getElementById("btn1");
         const btn2 = document.getElementById("btn2");
         const btn3 = document.getElementById("btn3");
+        const btn4 = document.getElementById("btn4");
+        const btn5 = document.getElementById("btn5");
         var y = document.getElementById("img-tab");
         var z = document.getElementById("img-h3");
 
         btn1.addEventListener("click", function () {
           var x = document.getElementById("img-infos");
-          z.innerHTML = "<h4>Identifications</h4>";
-          x.innerHTML = "<p>1A : Courone de laurier, nuage clairs</p><p>1B : Noeud central du tableau, où la majeur partie des actions à lieu</p><p>1C : Personnage laissant couler de l'eau -> captivé par le spectacle</p><p>2A : Anges apportant la victoire à Horatius</p><p>2B : Pont, élément principal</p><p>2C : Regard -> Horatius, attire et guide le regard</p><p>3A : Montre Rome derrière lui</p><p>3B : Romains qui travaillent, ressent la tension</p><p>3C : /</p>";
+          z.innerHTML = "<h4>Tensions & Nœuds</h4>";
+          x.innerHTML = "<p>1A: Couronne de lauriers et les nuages de l’Olympe derrière</p><p>1B: La scène de la bataille des Etrusques contre Horatius Cocles</p><p>1C: Un dieu regardant la bataille</p><p>2A: Ange et divinité apportant les lauriers de la victoire à Horatius Cocles</p><p>2B: Pont, élément principal</p><p>2C: personnage divin laissant couler de l’eau</p><p>3A: Romain désespéré appelant les dieux à son secours</p><p>3B: Romains travaillant à casser le pont</p><p>3C : /</p>";
           y.innerHTML = '<img src="./images/1280px-Le_Brun,_Charles_-_Horatius_Cocles_defending_the_Bridge_-_Google_Art_Project.jpg" class="img-tab">';
         });
         btn2.addEventListener("click", function () {
           var x = document.getElementById("img-infos");
           z.innerHTML = "<h4>Les plans</h4>";
-          x.innerHTML = '<p><span style="color: #00cf35">● </span>1<SUP>er</SUP> plan : homme captivé par la bataille, regard guidant l\'oeil du spectateur</p><p><span style="color: #ff8200">● </span>2<SUP>e</SUP> plan : bataile entre Horatius et les Etrusques, élément principal du tableau</p><p><span style="color: #ff0000">● </span>3<SUP>e</SUP> plan : hommes romains cassant le pont</p><p><span style="color: #001dff">● </span>Point de perspective, tout le tableau s\'agence autour de ces lignes</p>';
+          x.innerHTML = '<p><span style="color: #00cf35">● </span>1<SUP>er</SUP> plan : Homme captivé par la bataille</p><p><span style="color: #ff8200">● </span>2<SUP>e</SUP> plan : Bataile entre Horatius et les Etrusques</p><p><span style="color: #ff0000">● </span>3<SUP>e</SUP> plan : Hommes Romains cassant le pont</p><p><span style="color: #001dff">● </span>Point de perspective, tout le tableau s\'agence autour de ces lignes</p>';
           y.innerHTML = '<img src="./images/Les_Plans.jpeg" class="img-tab">';
         });
         btn3.addEventListener("click", function () {
           var x = document.getElementById("img-infos");
           z.innerHTML = "<h4>Lumière</h4>";
-          x.innerHTML = "";
+          x.innerHTML = "<p>Met en valeur la scène principale où Horatius va être vainqueur</p>";
           y.innerHTML = '<img src="./images/light.jpeg" class="img-tab">';
         });
         btn4.addEventListener("click", function () {
           var x = document.getElementById("img-infos");
           z.innerHTML = "<h4>Observation</h4>";
-          x.innerHTML = "On observe un contraste entre les couleurs chaudes et froides. On a à gauche une couleur dominante : le jaune. Cette couleur évoque la vie, la domination. Comme elle est très orientée sur Horatius Cocles, ça laisse supposer qu'il va gagner la bataille en retenant ses ennemis. <p>A droite par contre, les couleurs sonmbres suggèrent des émotions bien plus tristes comme l'angoisse et la peur de ne pas arriver à casser le pont dans les temps.</p>";
+          x.innerHTML = "En regardant ce tableau, on ressent l'agitation, le mouvement. C'est une scène de bataille où tout le monde est en effervescence, pour attaquer ou pour défendre Rome. Il y a de la violence, des hommes sont à terre, d'autres attaquent leurs ennemis et on peut apercevoir la peur dans les yeux des Romains au fond de la toile.<p></p>";
           y.innerHTML = '<img src="./images/Le_Brun,_Charles_-_Horatius_Cocles_defending_the_Bridge_-_Google_Art_Project.jpg" class="img-tab">';
+        });
+        btn5.addEventListener("click", function () {
+          var x = document.getElementById("img-infos");
+          z.innerHTML = "<h4>Composition</h4>";
+          x.innerHTML = "<p>● Tableau construit autour de lignes obliques</p><p>● Ovale (vert) autour de Victoire. Hexagone à droite encadrant les romans</p><p>● Trapèse à gauche encadrant la bataille</p>";
+          y.innerHTML = '<img src="./images/analyse complètejpg.jpg" class="img-tab">';
         });
       </script>
     </div>
