@@ -394,8 +394,9 @@ a:focus {
 }
 
 .practice_detail p {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
   text-align: center;
+  font-size: 18px;
 }
 
 .heading-text {
