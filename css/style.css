@@ -315,6 +315,18 @@ a:focus {
   left: 0px;
 }
 
+.img-infos p {
+  line-height: 1;
+}
+.img-tab {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+}
+.img-tab-tinfo {
+  font-size: small;
+}
+
 @media (min-width: 768px) {
   .button_image {
     padding: 10px 25px 10px;
@@ -323,7 +335,7 @@ a:focus {
 .img-infos p {
   line-height: 1;
 }
-.img-tab{
+.img-tab {
   width: 75%;
   display: block;
   margin-left: auto;
